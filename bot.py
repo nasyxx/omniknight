@@ -45,14 +45,8 @@ from telegram import InputTextMessageContent, InlineQueryResultArticle
 from telegram.ext import Updater, CallbackContext, InlineQueryHandler
 from telegram.update import Update
 
+from metas import METAS, METASD
 from config import TOKEN as BOT_TOKEN
-
-CHECK_LISTS = ("是否有语法错误？", "")
-CHECK = "问问题前做了这些检查了吗？\n" + "\n".join(CHECK_LISTS)
-
-
-METAS = {"check": CHECK}
-METASD = {"check": "Check List"}
 
 
 def query_meta(s: str) -> Tuple[str, ...]:
@@ -73,7 +67,9 @@ def meta(update: Update, context: CallbackContext) -> None:
                         title=q,
                         description=METASD[q],
                         input_message_content=InputTextMessageContent(
-                            METAS[q]
+                            METAS[q],
+                            parse_mode=True,
+                            disable_web_page_preview=False,
                         ),
                     ),
                     qs,
