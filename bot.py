@@ -51,7 +51,7 @@ from config import TOKEN as BOT_TOKEN
 
 def query_meta(s: str) -> Tuple[str, ...]:
     """Query meta data."""
-    return tuple(filter(lambda m: s in m, METAS))
+    return tuple(filter(lambda m: s in m, METAS)) or tuple(METAS)
 
 
 def meta(update: Update, context: CallbackContext) -> None:
@@ -68,7 +68,7 @@ def meta(update: Update, context: CallbackContext) -> None:
                         description=METASD[q],
                         input_message_content=InputTextMessageContent(
                             METAS[q],
-                            parse_mode=True,
+                            parse_mode="Markdown",
                             disable_web_page_preview=False,
                         ),
                     ),
