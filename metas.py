@@ -40,7 +40,7 @@ There are more things in heaven and earth, Horatio, than are dreamt.
 CHECK_LISTS = (
     "是否认真阅读了错误提示并明白它在说什么？",
     "是否浏览过相关文档却没找到解决方案？",
-    "是否Google过却没有有价值的信息？",
+    "是否 Google 过却没有有价值的信息？",
     "请阐述你的需求",
     "请说明你做过的尝试，若有代码请贴出（最小化可复现片段）",
     "请贴出完整的相关错误/日志信息/得到的结果"
@@ -54,20 +54,24 @@ PIN = "t.me/pythonzh/166473"
 
 BOOK = "t.me/pythonzh/6605"
 
+WPG = "https://frostming.com/2019/03-13/where-do-your-packages-go"
+
 # METAS | key: output string.
 METAS = {
-    "check": CHECK,
+    "check list": CHECK,
     "long": f"长代码放在这儿:\n{PASTEBIN}\n{GIST}",
+    "where do your packages go" : WPG,
     "pin": f"置顶消息是: {PIN}",
-    "suggest_book": f"推荐书籍: {BOOK}",
+    "suggest book": f"推荐书籍: {BOOK}",
 }
 
 # METAS DESCRIPTIONS | key: description
 METASD = {
-    "check": "Check List",
+    "check list": "Check List",
     "long": "长代码",
+    "where do your packages go": "你的包去哪儿了？",
     "pin": "置顶消息",
-    "suggest_book": "推荐书籍",
+    "suggest book": "推荐书籍",
 }
 
 
