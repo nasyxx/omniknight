@@ -43,11 +43,11 @@ CHECK_LISTS = (
     "是否 Google 过却没得到有价值的信息？",
     "请阐述你的需求",
     "请描述你尝试的步骤，若有代码请贴出（最小化可复现片段）",
-    "请贴出完整的相关错误/日志信息/得到的结果"
+    "请贴出完整的相关错误/日志信息/得到的结果",
 )
 CHECK = "问问题前做了这些检查了吗？\n  " + "\n  ".join(CHECK_LISTS)
 
-PEP8 ="https://www.python.org/dev/peps/pep-0008/"
+PEP8 = "https://www.python.org/dev/peps/pep-0008/"
 
 PASTEBIN = "https://pastebin.com/"
 GIST = "https://gist.github.com/"
@@ -61,9 +61,9 @@ WPG = "https://frostming.com/2019/03-13/where-do-your-packages-go"
 # METAS | key: output string.
 METAS = {
     "check list": CHECK,
-    "pep8", PEP8,
+    "pep8": PEP8,
     "long": f"长代码放在这儿:\n{PASTEBIN}\n{GIST}",
-    "where do your packages go" : WPG,
+    "where do your packages go": WPG,
     "pin": f"置顶消息是: {PIN}",
     "suggest book": f"推荐书籍: {BOOK}",
 }
@@ -71,7 +71,7 @@ METAS = {
 # METAS DESCRIPTIONS | key: description
 METASD = {
     "check list": "Check List",
-    "pep8", "PEP 8",
+    "pep8": "PEP 8",
     "long": "长代码",
     "where do your packages go": "你的包去哪儿了？",
     "pin": "置顶消息",
