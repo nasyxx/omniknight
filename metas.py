@@ -47,6 +47,8 @@ CHECK_LISTS = (
 )
 CHECK = "问问题前做了这些检查了吗？\n  " + "\n  ".join(CHECK_LISTS)
 
+PEP8 ="https://www.python.org/dev/peps/pep-0008/"
+
 PASTEBIN = "https://pastebin.com/"
 GIST = "https://gist.github.com/"
 
@@ -59,6 +61,7 @@ WPG = "https://frostming.com/2019/03-13/where-do-your-packages-go"
 # METAS | key: output string.
 METAS = {
     "check list": CHECK,
+    "pep8", PEP8,
     "long": f"长代码放在这儿:\n{PASTEBIN}\n{GIST}",
     "where do your packages go" : WPG,
     "pin": f"置顶消息是: {PIN}",
@@ -68,6 +71,7 @@ METAS = {
 # METAS DESCRIPTIONS | key: description
 METASD = {
     "check list": "Check List",
+    "pep8", "PEP 8",
     "long": "长代码",
     "where do your packages go": "你的包去哪儿了？",
     "pin": "置顶消息",
