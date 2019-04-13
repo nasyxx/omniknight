@@ -82,5 +82,8 @@ METASD = {
     "me": "Who am I?",
 }
 
+# METAS EXTRA OPTIONS
 
-__all__ = ["METAS", "METASD"]  # pylint: disable=W0612
+METASEX = {"me": {"parse_mode": None}}
+
+__all__ = ["METAS", "METASD", "METASEX"]  # pylint: disable=W0612

@@ -45,7 +45,7 @@ from telegram import InputTextMessageContent, InlineQueryResultArticle
 from telegram.ext import Updater, CallbackContext, InlineQueryHandler
 from telegram.update import Update
 
-from metas import METAS, METASD
+from metas import METAS, METASD, METASEX
 from config import TOKEN as BOT_TOKEN
 
 
@@ -68,8 +68,12 @@ def meta(update: Update, context: CallbackContext) -> None:
                         description=METASD[q],
                         input_message_content=InputTextMessageContent(
                             METAS[q],
-                            parse_mode="Markdown",
-                            disable_web_page_preview=False,
+                            parse_mode=METASEX.get(q, {}).get(
+                                "parse_mode", "Markdown"
+                            ),
+                            disable_web_page_preview=METASEX.get("q", {}).get(
+                                "disable_web_page_preview", False
+                            ),
                         ),
                     ),
                     qs,
