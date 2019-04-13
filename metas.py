@@ -49,8 +49,11 @@ CHECK = "问问题前做了这些检查了吗？\n  " + "\n  ".join(CHECK_LISTS)
 
 PEP8 = "https://www.python.org/dev/peps/pep-0008/"
 
-PASTEBIN = "https://pastebin.com/"
-GIST = "https://gist.github.com/"
+PASTES = [
+    "https://pastebin.com/",
+    "https://gist.github.com/",
+    "https://paste.ubuntu.com/",
+]
 
 PIN = "t.me/pythonzh/166473"
 
@@ -64,7 +67,7 @@ ME = "https://github.com/nasyxx/omniknight"
 METAS = {
     "check list": CHECK,
     "pep8": PEP8,
-    "long": f"长代码放在这儿:\n{PASTEBIN}\n{GIST}",
+    "long": f"长代码放在这儿:\n" + "\n".join(PASTES),
     "where do your packages go": WPG,
     "pin": f"置顶消息是: {PIN}",
     "suggest book": f"推荐书籍: {BOOK}",
