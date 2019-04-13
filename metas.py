@@ -58,6 +58,8 @@ BOOK = "t.me/pythonzh/6605"
 
 WPG = "https://frostming.com/2019/03-13/where-do-your-packages-go"
 
+ME = "https://github.com/nasyxx/omniknight"
+
 # METAS | key: output string.
 METAS = {
     "check list": CHECK,
@@ -66,6 +68,7 @@ METAS = {
     "where do your packages go": WPG,
     "pin": f"置顶消息是: {PIN}",
     "suggest book": f"推荐书籍: {BOOK}",
+    "me": ME,
 }
 
 # METAS DESCRIPTIONS | key: description
@@ -76,6 +79,7 @@ METASD = {
     "where do your packages go": "你的包去哪儿了？",
     "pin": "置顶消息",
     "suggest book": "推荐书籍",
+    "me": "Who am I?",
 }
 
 
