@@ -63,6 +63,8 @@ WPG = "https://frostming.com/2019/03-13/where-do-your-packages-go"
 
 ME = "https://github.com/nasyxx/omniknight"
 
+WARN = "禁止广告、引战、开车、拼车、黑产、过激言论、作弊及有偿任务，将警告或封禁。"
+
 # METAS | key: output string.
 METAS = {
     "check list": CHECK,
@@ -70,6 +72,7 @@ METAS = {
     "long": f"长代码放在这儿:\n" + "\n".join(PASTES),
     "where do your packages go": WPG,
     "pin": f"置顶消息是: {PIN}",
+    "warn": WARN,
     "suggest book": f"推荐书籍: {BOOK}",
     "me": ME,
 }
@@ -81,6 +84,7 @@ METASD = {
     "long": "长代码",
     "where do your packages go": "你的包去哪儿了？",
     "pin": "置顶消息",
+    "warn": "警告⚠️️",
     "suggest book": "推荐书籍",
     "me": "Who am I?",
 }
