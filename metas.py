@@ -53,6 +53,7 @@ PASTES = [
     "https://pastebin.com/",
     "https://gist.github.com/",
     "https://paste.ubuntu.com/",
+    "https://hastebin.com/"
 ]
 
 PIN = "t.me/pythonzh/166473"
