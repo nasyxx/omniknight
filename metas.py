@@ -40,10 +40,11 @@ There are more things in heaven and earth, Horatio, than are dreamt.
 CHECK_LISTS = (
     "是否认真阅读了错误提示并明白它在说什么？",
     "是否浏览过文档的相关章节却没找到解决方案？",
-    "是否 Google 过却没得到有价值的信息？",
+    "是否  Google 过却没得到有价值的信息？",
     "请阐述你的需求",
     "请描述你尝试的步骤，若有代码请贴出（最小化可复现片段）",
     "请贴出完整的相关错误/日志信息/得到的结果",
+    "[提问的技巧](https://t.me/pythonzh/105952)",
 )
 CHECK = "问问题前做了这些检查了吗？\n  " + "\n  ".join(CHECK_LISTS)
 
