@@ -55,7 +55,7 @@ PASTES = [
     "https://paste.ubuntu.com/",
 ]
 
-PIN = "t.me/pythonzh/166473"
+PIN = "t.me/pythonzh/196856"
 
 BOOK = "t.me/pythonzh/6605"
 
