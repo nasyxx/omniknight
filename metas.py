@@ -58,7 +58,12 @@ PASTES = [
 
 PIN = "t.me/pythonzh/196856"
 
-BOOK = "t.me/pythonzh/6605"
+DOCS = [
+    "[官方文档](https://docs.python.org/zh-cn/3/)",
+    "[Cookbook](https://python3-cookbook.readthedocs.io/zh_CN/latest/)",
+    r"[免费的书](https://github.com/EbookFoundation/free-programming-books/"
+    "blob/master/free-programming-books-zh.md#python)",
+]
 
 WPG = "https://frostming.com/2019/03-13/where-do-your-packages-go"
 
@@ -72,9 +77,9 @@ METAS = {
     "pep8": PEP8,
     "long": f"长代码放在这儿:\n" + "\n".join(PASTES),
     "where do your packages go": WPG,
+    "docs": "\n".join(DOCS),
     "pin": f"置顶消息是: {PIN}",
     "warn": WARN,
-    "suggest book": f"推荐书籍: {BOOK}",
     "me": ME,
 }
 
@@ -84,14 +89,17 @@ METASD = {
     "pep8": "PEP 8",
     "long": "长代码",
     "where do your packages go": "你的包去哪儿了？",
+    "docs": "推荐手册",
     "pin": "置顶消息",
     "warn": "警告⚠️️",
-    "suggest book": "推荐书籍",
     "me": "Who am I?",
 }
 
 # METAS EXTRA OPTIONS
 
-METASEX = {"me": {"parse_mode": None}}
+METASEX = {
+    "me": {"parse_mode": None},
+    "docs": {"disable_web_page_preview": True},
+}
 
 __all__ = ["METAS", "METASD", "METASEX"]  # pylint: disable=W0612
