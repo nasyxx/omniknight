@@ -71,7 +71,7 @@ def meta(update: Update, context: CallbackContext) -> None:
                             parse_mode=METASEX.get(q, {}).get(
                                 "parse_mode", "Markdown"
                             ),
-                            disable_web_page_preview=METASEX.get("q", {}).get(
+                            disable_web_page_preview=METASEX.get(q, {}).get(
                                 "disable_web_page_preview", False
                             ),
                         ),
