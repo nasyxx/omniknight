@@ -54,7 +54,7 @@ PASTES = [
     "https://pastebin.com/",
     "https://gist.github.com/",
     "https://paste.ubuntu.com/",
-    "https://hastebin.com/"
+    "https://hastebin.com/",
 ]
 
 PIN = "t.me/pythonzh/196856"
@@ -64,6 +64,13 @@ DOCS = [
     "[Cookbook](https://python3-cookbook.readthedocs.io/zh_CN/latest/)",
     r"[免费的书](https://github.com/EbookFoundation/free-programming-books/"
     "blob/master/free-programming-books-zh.md#python)",
+]
+
+EDITORS = [
+    "[Emacs](https://www.gnu.org/software/emacs/)",
+    "[Visual Studio Code](https://code.visualstudio.com/)",
+    "[PyCharm](https://www.jetbrains.com/pycharm/)",
+    "[Vim](https://www.vim.org/)",
 ]
 
 WPG = "https://frostming.com/2019/03-13/where-do-your-packages-go"
@@ -79,6 +86,7 @@ METAS = {
     "long": f"长代码放在这儿:\n" + "\n".join(PASTES),
     "where do your packages go": WPG,
     "docs": "\n".join(DOCS),
+    "editors": "\n".join(EDITORS),
     "pin": f"置顶消息是: {PIN}",
     "warn": WARN,
     "me": ME,
@@ -91,6 +99,7 @@ METASD = {
     "long": "长代码",
     "where do your packages go": "你的包去哪儿了？",
     "docs": "推荐手册",
+    "editors": "编辑器推荐",
     "pin": "置顶消息",
     "warn": "警告⚠️️",
     "me": "Who am I?",
