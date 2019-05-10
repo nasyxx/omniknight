@@ -79,6 +79,17 @@ ME = "https://github.com/nasyxx/omniknight"
 
 WARN = "禁止广告、引战、开车、拼车、黑产、过激言论、作弊及有偿任务，将警告或封禁。"
 
+FONTS = [
+    "FiraCode",
+    "Operator Mono",
+    "Source Code Pro",
+    "Ubuntu Mono",
+    "SF Mono",
+    "Consolas",
+    "Inconsolata",
+    "[在线字体预览](https://app.programmingfonts.org/)",
+]
+
 # METAS | key: output string.
 METAS = {
     "check list": CHECK,
@@ -90,6 +101,7 @@ METAS = {
     "pin": f"置顶消息是: {PIN}",
     "warn": WARN,
     "me": ME,
+    "fonts": "\n".join(FONTS),
 }
 
 # METAS DESCRIPTIONS | key: description
@@ -103,6 +115,7 @@ METASD = {
     "pin": "置顶消息",
     "warn": "警告⚠️️",
     "me": "Who am I?",
+    "fonts": "编程字体推荐",
 }
 
 # METAS EXTRA OPTIONS
