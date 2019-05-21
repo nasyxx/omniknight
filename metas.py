@@ -122,7 +122,10 @@ METASD = {
 
 METASEX = {
     "me": {"parse_mode": None},
+    "long": {"disable_web_page_preview": True},
     "docs": {"disable_web_page_preview": True},
+    "editors": {"disable_web_page_preview": True},
+    "check list": {"disable_web_page_preview": True},
 }
 
 __all__ = ["METAS", "METASD", "METASEX"]  # pylint: disable=W0612
