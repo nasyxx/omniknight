@@ -61,6 +61,7 @@ PIN = "t.me/pythonzh/196856"
 
 DOCS = [
     "[官方文档](https://docs.python.org/zh-cn/3/)",
+    "[编程小白的第一本 Python 入门书](http://www.ituring.com.cn/book/1863)",
     "[Cookbook](https://python3-cookbook.readthedocs.io/zh_CN/latest/)",
     r"[免费的书](https://github.com/EbookFoundation/free-programming-books/"
     "blob/master/free-programming-books-zh.md#python)",
