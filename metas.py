@@ -48,7 +48,7 @@ CHECK_LISTS = (
 )
 CHECK = "问问题前做了这些检查了吗？\n  " + "\n  ".join(CHECK_LISTS)
 
-PEP8 = "https://www.python.org/dev/peps/pep-0008/"
+PEP = "https://www.python.org/dev/peps/pep-{}/"
 
 PASTES = [
     "https://pastebin.com/",
@@ -94,7 +94,8 @@ FONTS = [
 # METAS | key: output string.
 METAS = {
     "check list": CHECK,
-    "pep8": PEP8,
+    "pep8": PEP.format("0008"),
+    "pep257": PEP.format("0257"),
     "long": f"长代码放在这儿:\n" + "\n".join(PASTES),
     "where do your packages go": WPG,
     "docs": "\n".join(DOCS),
@@ -109,6 +110,7 @@ METAS = {
 METASD = {
     "check list": "Check List",
     "pep8": "PEP 8",
+    "pep257": "PEP 257",
     "long": "长代码",
     "where do your packages go": "你的包去哪儿了？",
     "docs": "推荐手册",
