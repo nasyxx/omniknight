@@ -57,7 +57,7 @@ PASTES = [
     "https://hastebin.com/",
 ]
 
-PIN = "t.me/pythonzh/196856"
+PIN = "https://t.me/pythonzh/231108"
 
 DOCS = [
     "[官方文档](https://docs.python.org/zh-cn/3/)",
