@@ -29,6 +29,7 @@ Excited without bugs::
 
 author   : Nasy https://nasy.moe
 date     : Apr  8, 2019
+update   : Mar 10, 2021
 email    : Nasy <nasyxx+python@gmail.com>
 filename : metas.py
 project  : Omniknight
@@ -40,7 +41,7 @@ There are more things in heaven and earth, Horatio, than are dreamt.
 CHECK_LISTS = (
     "是否认真阅读了错误提示并明白它在说什么？",
     "是否浏览过文档的相关章节却没找到解决方案？",
-    "是否  Google 过却没得到有价值的信息？",
+    "是否 Google 过却没得到有价值的信息？",
     "请阐述你的需求",
     "请描述你尝试的步骤，若有代码请贴出（最小化可复现片段）",
     "请贴出完整的相关错误/日志信息/得到的结果",
@@ -57,14 +58,14 @@ PASTES = [
     "https://hastebin.com/",
 ]
 
-PIN = "https://t.me/pythonzh/340327"
+PIN = "https://t.me/pythonzh/510154"
 
 DOCS = [
-    "[官方文档](https://docs.python.org/zh-cn/3/)",
-    "[编程小白的第一本 Python 入门书](http://www.ituring.com.cn/book/1863)",
+    "[官方文档(中文)](https://docs.python.org/zh-cn/3/)",
+    "[小白入门书](http://www.ituring.com.cn/book/1863)",
     "[Cookbook](https://python3-cookbook.readthedocs.io/zh_CN/latest/)",
-    r"[免费的书](https://github.com/EbookFoundation/free-programming-books/"
-    "blob/master/free-programming-books-zh.md#python)",
+    # r"[免费的书](https://github.com/EbookFoundation/free-programming-books/"  # outdated
+    # "blob/master/free-programming-books-zh.md#python)",
 ]
 
 EDITORS = [
@@ -97,7 +98,7 @@ METAS = {
     "pep8": PEP.format("0008"),
     "pep257": PEP.format("0257"),
     "long": f"长代码放在这儿:\n" + "\n".join(PASTES),
-    "where do your packages go": WPG,
+    "where packages": WPG,
     "docs": "\n".join(DOCS),
     "editors": "\n".join(EDITORS),
     "pin": f"置顶消息是: {PIN}",
@@ -112,7 +113,7 @@ METASD = {
     "pep8": "PEP 8",
     "pep257": "PEP 257",
     "long": "长代码",
-    "where do your packages go": "你的包去哪儿了？",
+    "where packages": "你的包去哪儿了？",
     "docs": "推荐手册",
     "editors": "编辑器推荐",
     "pin": "置顶消息",
